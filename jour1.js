@@ -36,3 +36,8 @@ var word = "banana";
 var letters = word.split();
 console.log(letters);
 /* fon d'exercice7 */
+
+/* exercice 8 */
+var age = 39;
+console.log(`I'm ${age} years old.`);
+/* fin d'exercice 8 */
