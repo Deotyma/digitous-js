@@ -4,10 +4,12 @@ console.log("Hello World !");
 
 /* exercice 2 */
 var test = "My name is Ewa"
-console.log(test)
-    /* fin d'exercice 2 */
+console.log(test);
+/* fin d'exercice 2 */
 
 /* exercice 3 */
+var name = "Ewa"
+console.log("Nice to meet you " + name);
 /* fin d'exercice 3 */
 
 /* exercice 4 */
