@@ -24,4 +24,9 @@ console.log(croissant);
 /* fin d'exercice 5 */
 
 /* exercice 6 */
+var basic = "This is Cool";
+var up = basic.toUpperCase();
+var down = basic.toLowerCase()
+console.log(up);
+console.log(down);
 /* fin d'exercice 6 */
