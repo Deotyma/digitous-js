@@ -30,3 +30,9 @@ var down = basic.toLowerCase()
 console.log(up);
 console.log(down);
 /* fin d'exercice 6 */
+
+/* exercice 7 */
+var word = "banana";
+var letters = word.split();
+console.log(letters);
+/* fon d'exercice7 */
