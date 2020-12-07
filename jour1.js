@@ -18,6 +18,9 @@ console.log("Longeur d'un string: " + testLength.length);
 /* fin d'exercice 4 */
 
 /* exercice  5*/
+var food = "croissant is meh";
+var croissant = food.replace("meh", "good");
+console.log(croissant);
 /* fin d'exercice 5 */
 
 /* exercice 6 */
