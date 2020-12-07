@@ -33,7 +33,7 @@ console.log(down);
 
 /* exercice 7 */
 var word = "banana";
-var letters = word.split();
+var letters = word.split("");
 console.log(letters);
 /* fon d'exercice7 */
 
