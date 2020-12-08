@@ -70,3 +70,22 @@ if (limit <= score && password.length > 5) {
     console.log("Nothing is good");
 }
 /* fin d'exercice 8 */
+
+/* Bonus 1 */
+console.log("bonus 1");
+var random = Math.floor((Math.random() * 6) + 1);
+if (random === 6) {
+    console.log("Yes I win !");
+} else {
+    console.log("So close...");
+}
+/* fin de bonus 1 */
+
+/* Bonus 2 */
+console.log("bonus 2");
+var month = "january";
+/* fin de bonus 2 */
+
+/* Bonus 3 */
+console.log("bonus 3");
+/* fin de bonus 3 */
