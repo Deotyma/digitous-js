@@ -54,6 +54,10 @@ if (limit <= score) {
 
 /* exercice 7 */
 console.log("ex7");
+var password = "azerty";
+if (password.length > 5) {
+    console.log("The password is secure");
+}
 /* fin d'exercice 7 */
 
 /* exercice 8 */
