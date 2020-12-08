@@ -23,6 +23,13 @@ console.log(rounded);
 
 /* exercice 4 */
 console.log("ex4");
+var test = 12;
+var bis = 5;
+console.log(test + bis);
+console.log(test - bis);
+console.log(test / bis);
+console.log(test * bis);
+console.log(test % bis);
 /* fin d'exercice 4 */
 
 /* exercice 5 */
