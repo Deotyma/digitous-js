@@ -41,9 +41,16 @@ console.log(test > bis);
 console.log(test == bis);
 /* fin d'exercice 5 */
 
-/* exercice 7 */
-console.log("ex7");
-/* fin d'exercice 7 */
+/* exercice 6 */
+console.log("ex6");
+var limit = 50;
+var score = 64;
+if (limit <= score) {
+    console.log("Ok good");
+} else {
+    console.log("Oh nooo");
+}
+/* fin d'exercice 6 */
 
 /* exercice 7 */
 console.log("ex7");
