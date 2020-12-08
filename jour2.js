@@ -62,4 +62,11 @@ if (password.length > 5) {
 
 /* exercice 8 */
 console.log("ex8");
+if (limit <= score && password.length > 5) {
+    console.log("Everything is good");
+} else if (limit <= score || password.length > 5) {
+    console.log("Something is good");
+} else {
+    console.log("Nothing is good");
+}
 /* fin d'exercice 8 */
