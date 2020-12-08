@@ -16,6 +16,9 @@ console.log(typeof stringified);
 
 /* exercice 3 */
 console.log("ex3");
+var num = 1.5;
+var rounded = Math.round(num);
+console.log(rounded);
 /* fin d'exercice 3 */
 
 /* exercice 4 */
