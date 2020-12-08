@@ -84,6 +84,31 @@ if (random === 6) {
 /* Bonus 2 */
 console.log("bonus 2");
 var month = "january";
+
+switch (month.toLowerCase()) {
+    case "december":
+    case "january":
+    case "february":
+        console.log("Winter");
+        break;
+    case "mars":
+    case "april":
+    case "may":
+        console.log("Spring");
+        break;
+    case "june":
+    case "july":
+    case "august":
+        console.log("Summer");
+        break;
+    case "september":
+    case "october":
+    case "november":
+        console.log("Autumn");
+        break;
+    default:
+        console.log("That's not a month...");
+}
 /* fin de bonus 2 */
 
 /* Bonus 3 */
