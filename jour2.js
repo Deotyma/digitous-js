@@ -34,6 +34,11 @@ console.log(test % bis);
 
 /* exercice 5 */
 console.log("ex5");
+var test = 143;
+var bis = 219;
+console.log(test < bis);
+console.log(test > bis);
+console.log(test == bis);
 /* fin d'exercice 5 */
 
 /* exercice 7 */
