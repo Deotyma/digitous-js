@@ -6,8 +6,12 @@ console.log(integer);
 console.log(float);
 /* fin d'exercice 1 */
 
-/* exercice 2 *4
+/* exercice 2 */
 console.log("ex2");
+var basic = 34;
+var stringified = basic.toString();
+console.log(stringified);
+console.log(typeof stringified);
 /* fin d'exercice 2 */
 
 /* exercice 3 */
