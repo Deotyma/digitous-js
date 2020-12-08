@@ -41,3 +41,10 @@ console.log(letters);
 var age = 39;
 console.log(`I'm ${age} years old.`);
 /* fin d'exercice 8 */
+
+/* Bonus */
+var bonjour = "Bonjour";
+const regex = /o/gi;
+var change = bonjour.replace(regex, "a");
+console.log(change);
+/* end Bonus */
