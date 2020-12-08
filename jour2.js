@@ -113,4 +113,13 @@ switch (month.toLowerCase()) {
 
 /* Bonus 3 */
 console.log("bonus 3");
+var roundedNumber = 12.8
+var rounded = roundedNumber - Math.floor(roundedNumber);
+
+if (rounded < 0.5) {
+    console.log(Math.floor(roundedNumber));
+} else {
+    console.log(Math.ceil(roundedNumber));
+}
+
 /* fin de bonus 3 */
