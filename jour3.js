@@ -29,9 +29,17 @@ objets.shift(); //Enlevez "chair" puis affichez le résultat
 console.log(objets);
 /* fin d'exercice 3 */
 
-/* exercice 14*/
-console.log("exercice 4")
-    /* fin d'exercice 4 */
+/* exercice 4*/
+console.log("exercice 4");
+var numbers = [4, 10, 8, 12, 6];
+console.log(numbers.reverse())
+
+
+numbers.sort(function(a, b) {
+    return a - b;
+});
+console.log(numbers);
+/* fin d'exercice 4 */
 
 /* exercice 5 */
 console.log("exercice 5")
