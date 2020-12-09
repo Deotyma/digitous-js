@@ -54,5 +54,14 @@ console.log(total);
 /* fin d'exercice 5 */
 
 /* exercice 6 */
-console.log("exercice 6")
-    /* fin d'exercice 6 */
+console.log("exercice 6");
+var sentence = "Hello Konexio !";
+var renversed = "";
+
+for (i = sentence.length - 1; i >= 0; i--) {
+    renversed += sentence[i];
+    /* console.log(renversed); */
+
+}
+console.log(renversed);
+/* fin d'exercice 6 */
