@@ -14,7 +14,20 @@ console.log(ingredients.indexOf("butter"));
 
 /* exercice 3 */
 console.log("exercice 3")
-    /* fin d'exercice 3 */
+var objets = ["pen", "book", "lamp"]
+
+objets.unshift("chair") //Ajoutez "chair" au début du tableau puis affichez le résultat
+console.log(objets);
+
+objets.pop(); //Enlevez "lamp" puis affichez le résultat
+console.log(objets);
+
+objets.push("laptop"); //Ajoutez "laptop" à la fin du tableau puis affichez le résultat
+console.log(objets);
+
+objets.shift(); //Enlevez "chair" puis affichez le résultat
+console.log(objets);
+/* fin d'exercice 3 */
 
 /* exercice 14*/
 console.log("exercice 4")
