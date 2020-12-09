@@ -42,8 +42,16 @@ console.log(numbers);
 /* fin d'exercice 4 */
 
 /* exercice 5 */
-console.log("exercice 5")
-    /* fin d'exercice 5 */
+console.log("exercice 5");
+var total = 0;
+var limit = 10;
+
+for (i = 0; i <= limit; i++) {
+    total = total + i;
+}
+console.log(total);
+
+/* fin d'exercice 5 */
 
 /* exercice 6 */
 console.log("exercice 6")
