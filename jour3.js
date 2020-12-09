@@ -83,3 +83,15 @@ for (i = 0; i <= 100; i++) {
     }
 }
 /* fin bonus 1 */
+
+/* bonus 2 */
+console.log("bonus 2");
+
+while (i < limit) {
+    i = 0;
+    i++;
+    total = total + i;
+}
+console.log(total);
+
+/* fin bonus 2 */
