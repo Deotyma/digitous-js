@@ -104,6 +104,23 @@ var min = 0;
 var max = promo4.length;
 var index = Math.floor(Math.random() * (max + 1));
 
-console.log(promo4[index])
+console.log(promo4[index]);
 
 /* bonus 3 */
+
+/* bonus 4 */
+console.log("bonus 4");
+var table = [];
+
+var min = 0;
+var max = 100;
+for (i = 0; i < 20; i++) {
+    table.push(Math.floor(Math.random() * (max + 1)));
+}
+console.log(table)
+table.sort(function(a, b) {
+    return a - b;
+});
+var maxi = table[table.length - 1];
+console.log(maxi);
+/* fin bonus 4 */
