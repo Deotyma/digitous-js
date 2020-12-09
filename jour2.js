@@ -121,5 +121,4 @@ if (rounded < 0.5) {
 } else {
     console.log(Math.ceil(roundedNumber));
 }
-
 /* fin de bonus 3 */
