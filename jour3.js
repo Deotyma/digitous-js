@@ -95,3 +95,15 @@ while (i < limit) {
 console.log(total);
 
 /* fin bonus 2 */
+
+/* bonus 3 */
+console.log("bonus 3");
+var promo4 = ["Adam", "Adama", "Allan", "Bah", "Ahmed", "At", "Damir", "El", "Elisabeth", "Thy", "Katty", "Hassan", "Houra", "Mosindo", "Mahmaudou", "Nicolas", "Saurv", "Sebasten", "Yeshi"];
+
+var min = 0;
+var max = promo4.length;
+var index = Math.floor(Math.random() * (max + 1));
+
+console.log(promo4[index])
+
+/* bonus 3 */
