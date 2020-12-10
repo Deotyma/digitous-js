@@ -144,10 +144,26 @@ for (i = 0; i < 10; i++) {
 /* fin de multiplication */
 
 /* lancer un dé */
-
+var total = 0
 for (i = 0; i < 10; i++) {
-
-    console.log(Math.floor((Math.random() * 6) + 1));
+    var dice = Math.floor((Math.random() * 6) + 1);
+    total = total + dice;
+    console.log("Lancée " + (i + 1));
+    console.log(dice);
 }
+console.log(total);
 
 /* fin lancer un dé */
+
+// exercice 1 afficher la somme de tout les entiers allant de 25 à 75
+console.log("la somme de tout les entiers allant de 25 à 75");
+
+var total = 0;
+var limit = 75;
+
+for (i = 25; i <= limit; i++) {
+    total = total + i;
+}
+console.log(total);
+
+//fin d'exercice
