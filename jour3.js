@@ -134,3 +134,9 @@ table.sort(function(a, b) {
 var maxi = table[table.length - 1];
 console.log(maxi);
 /* fin bonus 4 */
+
+/* multiplication */
+console.log("table de multiplication 7")
+for (i = 0; i < 10; i++) {
+    console.log("7 * " + i + " = " + 7 * i)
+}
