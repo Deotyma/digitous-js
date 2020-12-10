@@ -80,13 +80,13 @@ console.log(reverse.toString().replace(regex, ""));
 console.log("bonus 1");
 
 for (i = 0; i <= 100; i++) {
-    if (i % 3 == 0 && i % 5 == 0) {
+    if (i % 3 === 0 && i % 5 === 0) {
         console.log("fizzbuzz");
-    } else if (i % 5 == 0) {
+    } else if (i % 5 === 0) {
         console.log("buzz");
-    } else if (i % 3 == 0) {
+    } else if (i % 3 === 0) {
         console.log("fizz");
-    } else if (i % 7 == 0) {
+    } else if (i % 7 === 0) {
         console.log(" ");
     } else {
         console.log(i);
@@ -112,11 +112,11 @@ var promo4 = ["Adam", "Adama", "Allan", "Bah", "Ahmed", "At", "Damir", "El", "El
 
 var min = 0;
 var max = promo4.length;
-var index = Math.floor(Math.random() * (max + 1));
+var index = Math.floor(Math.random() * max);
 
 console.log(promo4[index]);
 
-/* bonus 3 */
+/* fin de bonus 3 */
 
 /* bonus 4 */
 console.log("bonus 4");
@@ -141,3 +141,13 @@ var number = 7
 for (i = 0; i < 10; i++) {
     console.log(number + " * " + i + " = " + number * i)
 }
+/* fin de multiplication */
+
+/* lancer un dé */
+
+for (i = 0; i < 10; i++) {
+
+    console.log(Math.floor((Math.random() * 6) + 1));
+}
+
+/* fin lancer un dé */
