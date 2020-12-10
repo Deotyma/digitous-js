@@ -167,3 +167,14 @@ for (i = 25; i <= limit; i++) {
 console.log(total);
 
 //fin d'exercice
+
+/* exercice 2 afficher la multiplication de tout les entier allant de 10 à 15 */
+console.log("afficher la multiplication de tout les entier allant de 10 à 15")
+
+var total = 1;
+var limit = 15;
+
+for (i = 10; i <= limit; i++) {
+    total = total * i;
+}
+console.log(total);
