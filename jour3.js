@@ -64,6 +64,16 @@ for (i = sentence.length - 1; i >= 0; i--) {
 
 }
 console.log(renversed);
+//
+var sentence = "Hello Konexio !";
+var reverse = []
+for (i = 0; i < sentence.length; i++) {
+    var letter = sentence.charAt(i);
+    reverse.unshift(letter);
+}
+const regex = /,/gi;
+console.log(reverse.toString().replace(regex, ""));
+
 /* fin d'exercice 6 */
 
 /* bonus 1 */
