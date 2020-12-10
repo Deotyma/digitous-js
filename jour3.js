@@ -189,3 +189,16 @@ for (i = 0; i <= limit; i += 2) {
     total = total + i;
 }
 console.log(total);
+/* end exercicr */
+
+/* exercice 4 afficher tout les multiples de 7 entre 0 et 1000 */
+console.log("afficher tout les multiples de 7 entre 0 et 1000")
+
+var total = 0;
+var limit = 1000;
+
+for (i = 0; i <= limit; i++) {
+    if (i % 7 === 0) {
+        console.log(i)
+    }
+}
