@@ -185,8 +185,7 @@ console.log("afficher la somme des entiers pairs allant de 0 à 100")
 var total = 0;
 var limit = 100;
 
-for (i = 10; i <= limit; i += 2) {
-    console.log(i);
+for (i = 0; i <= limit; i += 2) {
     total = total + i;
 }
 console.log(total);
