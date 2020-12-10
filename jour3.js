@@ -178,3 +178,15 @@ for (i = 10; i <= limit; i++) {
     total = total * i;
 }
 console.log(total);
+/* fin d'exercice */
+
+/* exercice 3 afficher la somme des entiers pairs allant de 0 à 100 */
+console.log("afficher la somme des entiers pairs allant de 0 à 100")
+var total = 0;
+var limit = 100;
+
+for (i = 10; i <= limit; i += 2) {
+    console.log(i);
+    total = total + i;
+}
+console.log(total);
