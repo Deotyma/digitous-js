@@ -137,6 +137,7 @@ console.log(maxi);
 
 /* multiplication */
 console.log("table de multiplication 7")
+var number = 7
 for (i = 0; i < 10; i++) {
-    console.log("7 * " + i + " = " + 7 * i)
+    console.log(number + " * " + i + " = " + number * i)
 }
