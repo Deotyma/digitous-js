@@ -67,4 +67,14 @@ console.log("Exercice 5");
 
 /* exercice6 */
 console.log("Exercice 6");
-/* fin d'exercice 6 */
+
+function format(secondes) {
+    var heures = Math.floor(secondes / (60 * 60));
+    var minutes = Math.floor((secondes - (heures * (60 * 60))) / 60);
+    var sec = (secondes - (heures * (60 * 60))) % 60;
+    console.log(heures + ":" + minutes + ":" + sec);
+
+}
+
+format(3700)
+    /* fin d'exercice 6 */
