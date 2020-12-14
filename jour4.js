@@ -16,6 +16,19 @@ if (isCute = true) {
 
 /* exercice2 */
 console.log("Exercice 2");
+var cat2 = {
+    name: "Koko",
+    age: 6,
+    isCute: true
+};
+
+var cats = [cat, cat2];
+
+console.log(cat.age);
+if (cat2.isCute = true) {
+    console.log("So cute " + cat2.name + " !");
+}
+
 /* fin d'exercice 2 */
 
 /* exercice3 */
