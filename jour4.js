@@ -46,6 +46,19 @@ oddOrEven(35);
 
 /* exercice4 */
 console.log("Exercice 4");
+
+function isBigger(num1, num2) {
+    if (num1 > num2) {
+        console.log(`${num1} is bigger`);
+    } else if (num1 < num2) {
+        console.log(`${num2} is bigger`);
+    } else(
+        console.log("both are the same")
+    );
+}
+isBigger(56, 98);
+isBigger(45, 7);
+isBigger(6, 6);
 /* fin d'exercice 4 */
 
 /* exercice5 */
