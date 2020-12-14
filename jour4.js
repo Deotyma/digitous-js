@@ -33,6 +33,15 @@ if (cat2.isCute = true) {
 
 /* exercice3 */
 console.log("Exercice 3");
+
+function oddOrEven(num) {
+    if (num % 2 === 0) {
+        console.log("This number is even")
+    } else { console.log("This number is odd") }
+}
+
+oddOrEven(4);
+oddOrEven(35);
 /* fin d'exercice 3 */
 
 /* exercice4 */
