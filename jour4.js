@@ -63,6 +63,18 @@ isBigger(6, 6);
 
 /* exercice5 */
 console.log("Exercice 5");
+
+function addUp(number) {
+    total = 0
+    for (var i = 0; i <= number; i++) {
+        total = total + i;
+    }
+    console.log(total);
+
+}
+addUp(12);
+
+
 /* fin d'exercice 5 */
 
 /* exercice6 */
