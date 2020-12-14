@@ -88,7 +88,7 @@ function format(secondes) {
 
 }
 
-format(3700)
+format(9700)
     /* fin d'exercice 6 */
 
 /* bonus 1 */
@@ -124,3 +124,32 @@ generatePassword(7);
 generatePassword(11);
 
 /* end bonus 1 */
+
+/* bonus 2 */
+console.log("Bonus 2")
+
+function launchDice(numberOfDice) {
+    var min = 1;
+    var max = 6;
+    total = 0
+    for (i = 0; i < 5; i++) {
+        random = Math.floor(Math.random() * (max - min + 1) + min);
+        total += random;
+    }
+    return (total);
+}
+joueur1 = launchDice(5);
+joueur2 = launchDice(5);
+/* console.log(joueur1);
+console.log(joueur2); */
+
+if (joueur1 < joueur2) {
+    console.log("Joueur2 a gagné.");
+} else if (joueur1 > joueur2) {
+    console.log("Joueur1 a gagné.");
+} else {
+    console.log("Ils sont à l'égalité");
+}
+
+
+/* end bonus 2 */
