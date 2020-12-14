@@ -90,3 +90,37 @@ function format(secondes) {
 
 format(3700)
     /* fin d'exercice 6 */
+
+/* bonus 1 */
+console.log("Bonus 1");
+
+function generatePassword(num) {
+    min = 65;
+    max = 90;
+    pass = [];
+    if (num < 6 || num > 15) {
+        console.log("erreur");
+    } else {
+        for (i = 1; i <= num; i++) {
+            var random = Math.floor(Math.random() * (max - min + 1) + min);
+            pass.push(random);
+        }
+        /* console.log(pass); */
+        passWord = [];
+        for (j = 0; j <= pass.length; j++) {
+            var letter = String.fromCharCode(pass[j]);
+            passWord.push(letter);
+        }
+        const regex = /,/gi;
+        console.log(passWord.toString().replace(regex, ""));
+
+        /* console.log(String.fromCharCode(pass.toNumber)); */
+    }
+}
+
+generatePassword(4);
+generatePassword(16);
+generatePassword(7);
+generatePassword(11);
+
+/* end bonus 1 */
