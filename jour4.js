@@ -9,7 +9,7 @@ var cat = {
 
 console.log(cat);
 console.log(cat.age);
-if (isCute = true) {
+if (cat.isCute) {
     console.log("So cute !");
 }
 /* fin d'exercice 1 */
@@ -25,7 +25,7 @@ var cat2 = {
 var cats = [cat, cat2];
 
 console.log(cat.age);
-if (cat2.isCute = true) {
+if (cat2.isCute) {
     console.log("So cute " + cat2.name + " !");
 }
 
@@ -65,7 +65,7 @@ isBigger(6, 6);
 console.log("Exercice 5");
 
 function addUp(number) {
-    total = 0
+    var total = 0
     for (var i = 0; i <= number; i++) {
         total = total + i;
     }
@@ -121,7 +121,7 @@ function generatePassword(num) {
 generatePassword(4);
 generatePassword(16);
 generatePassword(7);
-generatePassword(11);
+generatePassword(15);
 
 /* end bonus 1 */
 
@@ -131,15 +131,15 @@ console.log("Bonus 2")
 function launchDice(numberOfDice) {
     var min = 1;
     var max = 6;
-    total = 0
+    var total = 0
     for (i = 0; i < 5; i++) {
         random = Math.floor(Math.random() * (max - min + 1) + min);
         total += random;
     }
     return (total);
 }
-joueur1 = launchDice(5);
-joueur2 = launchDice(5);
+var joueur1 = launchDice(5);
+var joueur2 = launchDice(5);
 /* console.log(joueur1);
 console.log(joueur2); */
 
@@ -148,7 +148,7 @@ if (joueur1 < joueur2) {
 } else if (joueur1 > joueur2) {
     console.log("Joueur1 a gagné.");
 } else {
-    console.log("Ils sont à l'égalité");
+    console.log("Ils sont à l'égalité.");
 }
 
 
