@@ -4,7 +4,7 @@ console.log("Exercice 1");
 
 
 function formatDate(data) {
-    var data = new Date()
+    var data = new Date(data)
     var year = data.getFullYear();
     var month = data.getMonth() + 1;
     var day = data.getDate();
@@ -24,6 +24,8 @@ var birthday = new Date("01/09/2000");
 function calculateAge() {
     var age = today - birthday;
     console.log(age);
+    var years = new Date(age);
+    console.log(years.getFullYear() - 1970);
 }
 calculateAge()
 
