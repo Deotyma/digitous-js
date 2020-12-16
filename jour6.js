@@ -19,7 +19,7 @@ formatDate("2020-12-03");
 /* exercice 2 */
 console.log("Exercice 2");
 var today = new Date();
-var birthday = new Date("01/09/2000");
+var birthday = new Date("01/09/1950");
 
 function calculateAge() {
     var age = today - birthday;
@@ -33,4 +33,44 @@ calculateAge()
 
 /* exercice 3 */
 console.log("Exercice 3")
-    /* fin d'exercice 3 */
+var prompt = require('prompt');
+var schema = {
+    properties: {
+        email: {
+            pattern: /^[a-zA-Z\s\-]+$/,
+            message: 'l\'email doit être au bon format',
+            required: true
+        },
+        username: {
+            pattern: /^[a-zA-Z\s\-]+$/,
+            message: 'le mot de passe doit contenir au moins 6 caractères, au moins une lettre et au moins un chiffre, et peut contenir des tirets',
+            required: true
+        },
+        password: {
+            pattern: /^[a-zA-Z\s\-]+$/,
+            message: 'Le mot de passe doit contenir au moins 6 caractères, au moins une lettre et au moins un chiffre, et peut contenir des tirets',
+            required: true
+        },
+    }
+};
+
+//
+// Start the prompt
+//
+prompt.start();
+
+//
+// Get two properties from the user: email, password
+//
+prompt.get(schema, function(err, result) {
+    //
+    // Log the results.
+    //
+    console.log('Les données:');
+    console.log('  email: ' + result.email)
+    console.log('  username: ' + result.username);
+    console.log('  password: ' + result.password);
+});
+
+
+/* fin d'exercice 3 */
