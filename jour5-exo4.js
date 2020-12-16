@@ -6,7 +6,7 @@ prompt.start();
 
 var number = prompt.get(['num1']);
 
-function play() {
+function play(num1) {
     var min = 1;
     var max = 100;
     var mysteryNum = console.log(Math.floor(Math.random() * (max - min + 1) + min));
