@@ -37,7 +37,7 @@ var prompt = require('prompt');
 var schema = {
     properties: {
         email: {
-            pattern: /^[a-zA-Z\s\-]+$/,
+            pattern: /^[a-z\@{1}\-]+$/,
             message: 'l\'email doit être au bon format',
             required: true
         },
@@ -47,7 +47,7 @@ var schema = {
             required: true
         },
         password: {
-            pattern: /^[a-zA-Z\s\-]+$/,
+            pattern: /^[a-zA-Z\s\0-9+\-?\{6,}\g]+$/,
             message: 'Le mot de passe doit contenir au moins 6 caractères, au moins une lettre et au moins un chiffre, et peut contenir des tirets',
             required: true
         },
