@@ -20,16 +20,25 @@ console.log("Exercice 2");
 function countEach(letters) {
     letterX = [];
     letterO = [];
+    const regex1 = /^[ox]+$/;
+    const regex2 = /^[OX]+$/;
 
     for (var i = 0; i < letters.length; i++) {
-        if (letters[i] === "x" || letters[i] === "X") {
+        if (letters[i] === "x" && letters[i].match(regex1) || letters[i] === "X" && letters[i].match(regex2)) {
             letterX.push(letters[i]);
-        } else if (letters[i] === "o" || letters[i] === "O") {
+        } else if (letters[i] === "o" && letters[i].match(regex1) || letters[i] === "O" && letters[i].match(regex2)) {
             letterO.push(letters[i]);
+        } else {
+            var error = 1;
         }
     }
-    var egality = letterO.length === letterX.length;
-    console.log(egality);
+
+    if (error) {
+        console.log("ERROR. veuillez entrer que des 'x' et des 'o'.")
+    } else {
+        var egality = letterO.length === letterX.length;
+        console.log(egality);
+    }
 
     /* if (letterO.length === letterX.length) {
         console.log(true);
@@ -38,7 +47,9 @@ function countEach(letters) {
     } */
 }
 
+countEach("oxoxxi");
 countEach("oxoxx");
+countEach("oxoxxo");
 
 /* fin d'exercice 2 */
 
@@ -47,6 +58,7 @@ console.log("Exercice 3");
 
 function checkPal(word) {
     var pal = [];
+
     for (var i = 0; i < word.length; i++) {
         pal.unshift(word[i]);
     }
@@ -81,12 +93,12 @@ function swap(sentence) {
             /* var letter = sentence[i].toUpperCase(); */
             renversSentence.push(sentence[i].toUpperCase());
 
-            console.log(renversSentence);
+            /* console.log(renversSentence); */
 
         } else {
             /* var letter = sentence[i].toLowerCase(); */
             renversSentence.push(sentence[i].toLowerCase());
-            console.log(renversSentence);
+            /* console.log(renversSentence); */
         }
 
     }
@@ -110,7 +122,7 @@ function makeItSpongeBob(sentence) {
         } else {
 
             renversSentence.push(sentence[i].toLowerCase());
-            console.log(renversSentence);
+            /* console.log(renversSentence); */
 
         }
 
