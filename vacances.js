@@ -43,9 +43,31 @@ countEach("oxoxx");
 
 /* fin d'exercice 2 */
 
-/* exercice 1 */
-console.log("Exercice 1");
-/* fin d'exercice 1 */
+/* exercice 3 */
+console.log("Exercice 3");
+
+function checkPal(word) {
+    var pal = [];
+    for (var i = 0; i < word.length; i++) {
+        pal.unshift(word[i]);
+    }
+    /* console.log(pal); */
+
+    const regex = /,/gi;
+    var wordPal = pal.toString().replace(regex, "");
+    /*  console.log(wordPal); */
+
+    if (word === wordPal) {
+        console.log("Palindrome !");
+    } else {
+        console.log("Nope");
+    }
+
+}
+
+checkPal("racecar");
+checkPal("laptop");
+/* fin d'exercice 3 */
 
 /* exercice 1 */
 console.log("Exercice 1");
