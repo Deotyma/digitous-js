@@ -6,8 +6,7 @@ function sortLetters(word) {
     for (var i = 0; i < word.length; i++) {
         letters.push(word[i]);
     }
-    const regex = /,/gi;
-    console.log(letters.sort().join().replace(regex, ""));
+    console.log(letters.sort().join(""));
 
 }
 
@@ -57,7 +56,7 @@ function checkPal(word) {
     var wordPal = pal.toString().replace(regex, "");
     /*  console.log(wordPal); */
 
-    if (word === wordPal) {
+    if (word.toLowerCase() === wordPal.toLowerCase()) {
         console.log("Palindrome !");
     } else {
         console.log("Nope");
@@ -65,10 +64,49 @@ function checkPal(word) {
 
 }
 
-checkPal("racecar");
+checkPal("Racecar");
 checkPal("laptop");
 /* fin d'exercice 3 */
 
-/* exercice 1 */
-console.log("Exercice 1");
-/* fin d'exercice 1 */
+/* exercice 4 */
+console.log("Exercice 4");
+
+function swap(sentence) {
+    var renversSentence = [];
+    for (var i = 0; i < sentence.length; i++) {
+        const regex = /^[a-z]+$/;
+
+        /* var sentenceRanvers = sentence.split(""); */
+        if (sentence[i].match(regex)) {
+            /* var letter = sentence[i].toUpperCase(); */
+            renversSentence.push(sentence[i].toUpperCase());
+
+            console.log(renversSentence);
+
+        } else {
+            /* var letter = sentence[i].toLowerCase(); */
+            renversSentence.push(sentence[i].toLowerCase());
+            console.log(renversSentence);
+        }
+
+    }
+
+    console.log(renversSentence.join(""));
+}
+swap("Hello Word");
+/* fin d'exercice 4 */
+
+/* 3 - Palindrome */
+
+/* function checkPals(st) {
+    sts = st.split("");
+    console.log(sts);
+    reversed = sts.reverse();
+    console.log(reversed.join(""));
+    if (st === reversed.join("")) {
+        console.log("Palindrome !")
+    } else {
+        console.log("Nope")
+    }
+}
+checkPals("lit") */
