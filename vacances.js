@@ -96,17 +96,29 @@ function swap(sentence) {
 swap("Hello Word");
 /* fin d'exercice 4 */
 
-/* 3 - Palindrome */
+/* bonus 1 */
+console.log("Bonus 1");
 
-/* function checkPals(st) {
-    sts = st.split("");
-    console.log(sts);
-    reversed = sts.reverse();
-    console.log(reversed.join(""));
-    if (st === reversed.join("")) {
-        console.log("Palindrome !")
-    } else {
-        console.log("Nope")
+function makeItSpongeBob(sentence) {
+    var renversSentence = [sentence[0]];
+    for (var i = 1; i < sentence.length; i++) {
+        tabSentence = sentence.split("");
+        const regex = /^[a-z]+$/;
+        if (renversSentence[i - 1].match(regex)) {
+            renversSentence.push(tabSentence[i].toUpperCase());
+
+        } else {
+
+            renversSentence.push(sentence[i].toLowerCase());
+            console.log(renversSentence);
+
+        }
+
+
     }
+    console.log(renversSentence.join(""));
 }
-checkPals("lit") */
+
+makeItSpongeBob("Javascript is easy");
+
+/* fin de bonus 1 */
