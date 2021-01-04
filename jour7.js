@@ -24,7 +24,27 @@ console.log(double);
 
 /* exercise 3 */
 console.log("exercise 3")
-    /* fin d'exercise 3 */
+
+var longNames = [{
+        firstName: "Jane",
+        lastName: "Doe"
+    },
+    {
+        firstName: "John",
+        lastName: "Smith"
+    }
+]
+
+function shortNames(longNames) {
+    return longNames.map((element) => {
+        return element.firstName + " " + element.lastName;
+    });
+}
+
+
+console.log(shortNames(longNames))
+
+/* fin d'exercise 3 */
 
 /* exercise 4 */
 console.log("exercise 4")
