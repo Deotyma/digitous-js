@@ -48,7 +48,18 @@ console.log(shortNames(longNames))
 
 /* exercise 4 */
 console.log("exercise 4")
-    /* fin d'exercise 4 */
+
+var array = [1, "toto", 34, "javascript", 8]
+var numbers = [];
+
+function numberInArray(array) {
+    numbers = array.filter((element) => { return isInteger(element) });
+};
+
+console.log(numberInArray(array));
+
+
+/* fin d'exercise 4 */
 
 /* exercise 5 */
 console.log("exercise 5")
